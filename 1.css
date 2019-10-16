@@ -2,19 +2,8 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-flow: column;
     min-height: 100vh;
-}
-
-h1 {
-    font-size: 5rem;
-    text-align: center;
-    transform: rotateX(180);
-}
-
-h1 div {
-    height: 0;
-    width: 0;
-    transition: all 2s ease-in;
 }
 
 h1:hover {
@@ -22,14 +11,66 @@ h1:hover {
     transform: rotate(180deg);
 }
 
-h1:hover div {
-    background-color: bisque;
-    display: inline-block;
-    height: 100px;
+.box div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    border: 5px solid black;
 }
 
+ .box div:first-child {
+    background-color: deeppink;
+}
 
+div:first-child:hover {
+    transform: rotate(90deg)
+}
 
+.box div:nth-child(2) {
+    background-color: cyan;
+}
 
+.box div:nth-child(2):hover {
+    background-color: black;
+}
 
+.box div:nth-child(3) {
+    background-color: coral;
+}
+
+.box div:nth-child(3):hover {
+    background-color: lime;
+}
+
+.box div:nth-child(4):hover {
+    color: red;
+}
+
+.box div:nth-child(5):hover {
+    border: 5px white;  
+}
+
+.box div:nth-child(6):hover {
+    width: 200px;
+}
+
+.box div:nth-child(7):hover {
+    color: green;
+}
+
+.box div:nth-child(8):hover {
+    color: gold;
+}
+
+.box div:nth-child(9):hover {
+    text-decoration: underline;
+}
+
+.box div:last-child:hover {
+    text-transform: uppercase;
+    color: chartreuse;
+}
